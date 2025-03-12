@@ -1,6 +1,6 @@
 @Sentry.API_HostAddress = http://localhost:5048
 
-GET {{Sentry.API_HostAddress}}/weatherforecast/
+GET {{Sentry.API_HostAddress}}/helloworld/
 Accept: application/json
 
 ###
