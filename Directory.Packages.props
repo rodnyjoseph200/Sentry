@@ -1,0 +1,12 @@
+﻿<Project>
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <OpenTelemetry>1.9.0</OpenTelemetry>
+    <ApiVersioningVersion>8.1.0</ApiVersioningVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- Swashbuckle -->
+    <PackageVersion Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+    <PackageVersion Include="Swashbuckle.AspNetCore.Annotations" Version="7.2.0" />
+  </ItemGroup>
+</Project>
