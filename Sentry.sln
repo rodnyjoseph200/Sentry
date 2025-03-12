@@ -2,7 +2,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentry.API", "Sentry.API\Sentry.API.csproj", "{20DBE9CC-6070-41E0-B497-C9F181CBE7D0}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{83503415-96E1-4978-AC63-5D4260F02B24}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{E64E8D5B-6D02-4EAC-8FA3-990F7ACFC8D5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Apps", "Apps", "{CB562929-7B3F-4D90-8900-9B7E2F471D5D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentry.Core", "src\Core\Sentry.Core\Sentry.Core.csproj", "{D694FECE-FDF4-4187-9A3B-417488AE4198}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentry.Infrastructure", "src\Infrastructure\Sentry.Infrastructure\Sentry.Infrastructure.csproj", "{1F44E6AE-F30D-4024-9D96-E60636D86EA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentry.API", "src\Apps\API\Sentry.API.csproj", "{E2EC63F9-5BE9-448A-9736-F30C6A64D80C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -10,12 +20,26 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{20DBE9CC-6070-41E0-B497-C9F181CBE7D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{20DBE9CC-6070-41E0-B497-C9F181CBE7D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{20DBE9CC-6070-41E0-B497-C9F181CBE7D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{20DBE9CC-6070-41E0-B497-C9F181CBE7D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D694FECE-FDF4-4187-9A3B-417488AE4198}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D694FECE-FDF4-4187-9A3B-417488AE4198}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D694FECE-FDF4-4187-9A3B-417488AE4198}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D694FECE-FDF4-4187-9A3B-417488AE4198}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F44E6AE-F30D-4024-9D96-E60636D86EA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F44E6AE-F30D-4024-9D96-E60636D86EA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F44E6AE-F30D-4024-9D96-E60636D86EA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F44E6AE-F30D-4024-9D96-E60636D86EA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2EC63F9-5BE9-448A-9736-F30C6A64D80C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2EC63F9-5BE9-448A-9736-F30C6A64D80C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2EC63F9-5BE9-448A-9736-F30C6A64D80C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2EC63F9-5BE9-448A-9736-F30C6A64D80C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CB562929-7B3F-4D90-8900-9B7E2F471D5D} = {83503415-96E1-4978-AC63-5D4260F02B24}
+		{D694FECE-FDF4-4187-9A3B-417488AE4198} = {83503415-96E1-4978-AC63-5D4260F02B24}
+		{1F44E6AE-F30D-4024-9D96-E60636D86EA6} = {83503415-96E1-4978-AC63-5D4260F02B24}
+		{E2EC63F9-5BE9-448A-9736-F30C6A64D80C} = {CB562929-7B3F-4D90-8900-9B7E2F471D5D}
 	EndGlobalSection
 EndGlobal
