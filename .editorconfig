@@ -327,7 +327,7 @@ csharp_style_expression_bodied_accessors = true:silent
 # {
 #     Name = "Unknown";
 # }
-csharp_style_expression_bodied_constructors = false:silent
+csharp_style_expression_bodied_constructors = true:silent
 
 # csharp_style_expression_bodied_indexers enforces expression bodies for indexers.
 # Example:
@@ -337,7 +337,7 @@ csharp_style_expression_bodied_constructors = false:silent
 # {
 #     get { return _items[index]; }
 # }
-csharp_style_expression_bodied_indexers = true:silent
+csharp_style_expression_bodied_indexers = true:suggestion
 
 # csharp_style_expression_bodied_lambdas enforces using expression bodies for lambdas.
 # Example:
@@ -367,7 +367,7 @@ csharp_style_expression_bodied_local_functions = true:silent
 # {
 #     return 42;
 # }
-csharp_style_expression_bodied_methods = false:silent
+csharp_style_expression_bodied_methods = true:silent
 
 # csharp_style_expression_bodied_operators enforces using expression bodies for operator overloads.
 # Example:
@@ -377,7 +377,7 @@ csharp_style_expression_bodied_methods = false:silent
 # {
 #     return new Vector(a.X + b.X, a.Y + b.Y);
 # }
-csharp_style_expression_bodied_operators = false:silent
+csharp_style_expression_bodied_operators = true:silent
 
 # csharp_style_expression_bodied_properties enforces using expression bodies for properties.
 # Example:
@@ -387,7 +387,7 @@ csharp_style_expression_bodied_operators = false:silent
 # {
 #     get { return _myField; }
 # }
-csharp_style_expression_bodied_properties = true:silent
+csharp_style_expression_bodied_properties = true:suggestion
 
 # csharp_style_pattern_matching_over_as_with_null_check prefers pattern matching instead of 'as' + null check.
 # Example:
@@ -475,7 +475,7 @@ csharp_style_prefer_readonly_struct_member = true
 # }
 # [FALSE]
 # if (condition) DoSomething();
-csharp_prefer_braces = true:silent
+csharp_prefer_braces = false:suggestion
 
 # csharp_prefer_simple_using_statement enforces the C# 8+ simplified using statement.
 # Example:
@@ -483,25 +483,25 @@ csharp_prefer_braces = true:silent
 # using var file = new FileStream(...);
 # [FALSE]
 # using (var file = new FileStream(...)) { ... }
-csharp_prefer_simple_using_statement = true:suggestion
+csharp_prefer_simple_using_statement = true:warning
 
 # csharp_style_namespace_declarations enforces the namespace declaration style (file-scoped vs block-scoped).
-csharp_style_namespace_declarations = block_scoped:silent
+csharp_style_namespace_declarations = file_scoped:warning
 
 # csharp_style_prefer_method_group_conversion prefers using method groups over lambda expressions when they are equivalent.
 # Example:
 # [TRUE]: list.ForEach(Console.WriteLine);
 # [FALSE]: list.ForEach(x => Console.WriteLine(x));
-csharp_style_prefer_method_group_conversion = true:silent
+csharp_style_prefer_method_group_conversion = true:warning
 
 # csharp_style_prefer_primary_constructors prefers using primary constructors where possible.
 # Example:
 # [TRUE]: public class Person(string name) { }
 # [FALSE]: public class Person { public Person(string name) { } }
-csharp_style_prefer_primary_constructors = true:suggestion
+csharp_style_prefer_primary_constructors = false:suggestion
 
 # csharp_style_prefer_top_level_statements prefers top-level statements over explicit Program class.
-csharp_style_prefer_top_level_statements = true:silent
+csharp_style_prefer_top_level_statements = true:suggestion
 
 # csharp_prefer_simple_default_expression prefers the 'default' literal over explicit type or constructor calls.
 # Example:
@@ -598,7 +598,7 @@ csharp_style_unused_value_expression_statement_preference = discard_variable:war
 # {
 #     using System;
 # }
-csharp_using_directive_placement = outside_namespace:silent
+csharp_using_directive_placement = outside_namespace:warning
 
 # csharp_style_allow_blank_line_after_colon_in_constructor_initializer_experimental allows or disallows blank lines after colon in constructor initializers.
 # Example:
